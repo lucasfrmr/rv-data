@@ -1,0 +1,222 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+  
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1400px;
+}
+  
+#map {
+    height: 100%;
+    width: 100%;
+    min-height: 400px;
+    border-radius: 0.25rem;
+}
+  
+#river-data-table {
+    max-height: 400px;
+    overflow-y: auto;
+    width: 100%;
+    font-size: small;
+    height: 100%; /* Match the map height minus the card header */
+    overflow-y: auto;
+}
+  
+#river-data-table .table-responsive {
+    margin-bottom: 20px;
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.card-header[role="button"]:hover {
+    background-color: #2c2c2c;
+    cursor: pointer;
+}
+
+/* Dark theme for DataTable */
+.dataTables_wrapper {
+    color: #ffffff;
+}
+
+.dataTables_wrapper .dataTables_length, 
+.dataTables_wrapper .dataTables_filter, 
+.dataTables_wrapper .dataTables_info, 
+.dataTables_wrapper .dataTables_processing, 
+.dataTables_wrapper .dataTables_paginate {
+    color: #ffffff;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: #ffffff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #3c7fb1;
+    color: white !important;
+    border: 1px solid #3c7fb1;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #2c5d84;
+    color: white !important;
+    border: 1px solid #2c5d84;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom: 1px solid #444;
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #444;
+}
+
+/* Custom table styling */
+.table {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.table-dark {
+    --bs-table-bg: #222;
+    --bs-table-striped-bg: #2c2c2c;
+    --bs-table-hover-bg: #333;
+    color: #ffffff;
+}
+
+.table-dark th {
+    background-color: #111;
+    color: #3c7fb1;
+    font-weight: 600;
+    border-bottom: 2px solid #3c7fb1;
+}
+
+/* Professional measure indicators */
+.measure-value {
+    font-weight: 600;
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    text-align: right;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+/* Card styling */
+.card {
+    background-color: #222;
+    border-color: #3c7fb1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #2c2c2c;
+    font-weight: bold;
+    border-bottom: 1px solid #3c7fb1;
+    color: #ffffff;
+}
+
+.card-header[role="button"] {
+    cursor: pointer;
+}
+
+.card-header[role="button"]:hover {
+    background-color: #333;
+}
+
+/* Override Bootstrap colors for better visibility */
+.bg-primary {
+    background-color: #3c7fb1 !important;
+}
+
+.text-primary {
+    color: #3c7fb1 !important;
+}
+
+.border-primary {
+    border-color: #3c7fb1 !important;
+}
+
+.btn-primary {
+    background-color: #3c7fb1;
+    border-color: #2c5d84;
+}
+
+.btn-primary:hover {
+    background-color: #2c5d84;
+    border-color: #1c3f5f;
+}
+
+/* Input styling with better contrast */
+.form-control {
+    border-color: #3c7fb1;
+}
+
+.form-control:focus {
+    border-color: #3c7fb1;
+    box-shadow: 0 0 0 0.25rem rgba(60, 127, 177, 0.25);
+}
+
+.input-group-text {
+    border-color: #3c7fb1;
+    color: #ffffff;
+}
+
+/* Better badge visibility */
+.badge {
+    background-color: #3c7fb1 !important;
+    color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    #map {
+        height: 50vh;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .order-1 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Chart styling */
+#chartContainer .card-body {
+    padding: 1rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3c7fb1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2c5d84;
+}
+
+.card-body.p-0 {
+    height: 100%;
+}
