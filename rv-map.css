@@ -23,7 +23,7 @@ html, body {
 }
   
 #river-data-table {
-    max-height: 40vh; /* Table takes 40% of the viewport height */
+    max-height: 80vh; /* Table takes 40% of the viewport height */
     overflow-y: auto;
     width: 100%;
     font-size: small;
